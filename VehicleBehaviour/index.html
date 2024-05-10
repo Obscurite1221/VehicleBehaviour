@@ -1,0 +1,49 @@
+<html>
+<header>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</header>
+
+<body>
+    <div class="MenuDiv">
+        <h1 class="MenuTitle">Vehicle Modification Menu</h1>
+        <div class="MenuContent">
+            <div class="DivZero">
+                <button id="verify" onClick="updateVehicle()">Update</button>
+                <p>Open/Close: H</p>
+                <p>Spawn Test Vehicle: E</p>
+            </div>
+            <div class="DataFields">
+                <form id="vehMass">
+                    <label for="vehMassInput">Vehicle Mass</label><br>
+                    <input placeholder="Mass" id="vehMassInput">
+                    <label for="vehDragCoeff">Vehicle Drag Coefficient</label>
+                    <input placeholder="Drag Coefficient" id="vehDragCoeff">
+                    <label for="vehCenterOfMass">Vehicle Center of Mass</label><br>
+                    <input placeholder="x" id="vehCenterOfMassx" class="vec3Text">
+                    <input placeholder="y" id="vehCenterOfMassy" class="vec3Text">
+                    <input placeholder="z" id="vehCenterOfMassz" class="vec3Text"><br>
+                    <label for="vehInertialMult">Vehicle Inertial Multiplier</label><br>
+                    <input placeholder="x" id="vehInertiaMultx" class="vec3Text">
+                    <input placeholder="y" id="vehInertiaMulty" class="vec3Text">
+                    <input placeholder="z" id="vehInertiaMultz" class="vec3Text"><br>
+                    <label for="vehDriveBias">Vehicle Drive Bias (Front)</label>
+                    <input placeholder="Drive Bias" id="vehDriveBias"><br>
+                    <label for="vehNumGears">Number of Gears</label>
+                    <input placeholder="# Gears" id="vehNumGears"><br>
+                    <label for="vehDriveInertia">Vehicle Drive Inertia</label>
+                    <input placeholder="Drive Inertia" id="vehDriveInertia"><br>
+                    <label for="vehTopSpeed">Vehicle Top Speed</label>
+                    <input placeholder="Top Speed" id="vehTopSpeed"><br>
+                    <label for="vehBrakingForce">Vehicle Braking Force</label>
+                    <input placeholder="Braking Force" id="vehBrakingForce"><br>
+                    <label for="vehInitialDriveForce">Initial Drive Force</label>
+                    <input placeholder="Drive Force" id="vehInitialDriveForce"><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
